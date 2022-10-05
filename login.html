@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <title>LaundrEasy</title>
+</head>
+
+<body>
+    <div class="loginContent">
+        <div class="nameLaundreasy">
+            <i class="fas fa-box"></i>
+            <span>LaundrEasy</span>
+        </div>
+        <div class="leftWelcome">
+            <h2>Welcome Back</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam!</p>
+            <label for="changePage">Sign In</label>
+        </div>
+        <div class="rightWelcome">
+            <h2>Hello Friend!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <label for="changePage">Sign Up</label>
+        </div>
+        <form class="loginPage">
+            <h1>Log In</h1>
+            <div class="group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email1" onblur="checkEmail('email1')" oninput="removeInvalid('email1')"
+                    name="email" placeholder="Email">
+                <!--     -->
+            </div>
+            <div class="group">
+                <label class="fas fa-key" for="password"></label>
+                <input type="password" id="passWord1" name="password" onblur="checkPass('passWord1')"
+                    oninput="removeInvalid('passWord1')" placeholder="Password" />
+                <!-- min 8 char,atleast one and one number -->
+            </div>
+            <div class="group">
+                <button id="login" type="submit">Login</button>
+
+            </div>
+        </form>
+        <form class="registerPage">
+            <h1>Create Account</h1>
+            <div class="group">
+                <label class="fas fa-id-badge" for="name"></label>
+                <input type="text" id="reg" onblur="checkReg('reg')" oninput="removeInvalid('reg')" name="name"
+                    placeholder="Registration Number" />
+            </div>
+            <div class="group">
+                <label class="far fa-envelope" for="email"></label>
+                <input type="email" id="email2" name="email" onblur="checkEmail('email2')"
+                    oninput="removeInvalid('email2')" placeholder="Email" />
+            </div>
+            <div class="group">
+                <label class="fas fa-key" for="password"></label>
+                <input type="password" id="passWord2" onblur="checkPass('passWord2')"
+                    oninput="removeInvalid('passWord2')" name="password" placeholder="Password" />
+            </div>
+            <div class="group">
+                <label class="fas fa-key" for="password2"></label>
+                <input type="password" id="passWord22" name="password2" onblur="confirmPass('passWord2','passWord22')"
+                    oninput="removeInvalid('passWord22')" placeholder="Confirm Password" />
+            </div>
+            <button id="login" type="submit">Register</button>
+        </form>
+        <div class="cover">
+            <button id="changePage" name="changePage"></button>
+        </div>
+    </div>
+    <div class="mobileLoginContent">
+        
+        <div class="nameLaundreasy">
+            <i class="fas fa-box"></i>
+            <span>LaundrEasy</span>
+        </div>
+        <input type="checkbox" id="chk" aria-hidden="true">
+        <!-- <input type="checkbox" id="chk" aria-hidden="true"> -->
+
+        <div class="signup">
+            <form>
+                <label for="chk" aria-hidden="true" id="signupLabel">Sign up</label>
+                <input type="text" name="txt" placeholder="Registration Number" required="">
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="pswd" placeholder="Password" required="">
+                <input type="password" name="pswd" placeholder="Confirm Password" required="">
+                <button>Sign up</button>
+            </form>
+        </div>
+
+        <div class="login">
+            <form>
+                <label for="chk" aria-hidden="true" id="loginLabel">Login</label>
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="pswd" placeholder="Password" required="">
+                <button>Login</button>
+            </form>
+        </div>
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.js"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
