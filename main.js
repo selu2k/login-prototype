@@ -4,13 +4,30 @@
 //   mquery = window.matchMedia('(min-width: 600px)');
 // }
 
+var elem=document.getElementById("chk");
+
+// if(document.getElementById("machine").style.fill=="black"){
+//   document.getElementById("machine").style.fill="white";
+// }
+// else{
+//   document.getElementById("machine").style.fill="black";
+// }
+
+function func(){
+ 
+  document.getElementById("machine").style.fill=elem.checked ? "white":"black";
+}
+
+
 
 const cover = document.querySelector(".cover")
+const machine1 = document.querySelector("#machine1")
 
 let counter = 1
 
 $("#changePage").on('click', function () {
   if (counter % 2 === 1) {
+    // document.getElementById("machine").style.fill="white";
     anime({
       targets: cover,
       borderRadius: [
@@ -78,6 +95,10 @@ $("#changePage").on('click', function () {
       targets: ".nameLaundreasy",
       color: '#fff'
     })
+    anime({
+      targets: machine1,
+      fill: '#fff'
+    })
 
     counter += 1
 
@@ -124,7 +145,10 @@ $("#changePage").on('click', function () {
       targets: ".nameLaundreasy",
       color: '#1F4287'
     })
-
+    anime({
+      targets: machine1,
+      fill: '#000'
+    })
     counter += 1
   }
 })
