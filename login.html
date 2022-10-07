@@ -90,10 +90,12 @@
         <div class="signup">
             <form>
                 <label for="chk" aria-hidden="true" id="signupLabel">Sign up</label>
-                <input type="text" name="txt" placeholder="Registration Number" required="">
-                <input type="email" name="email" placeholder="Email" required="">
-                <input type="password" name="pswd" placeholder="Password" required="">
-                <input type="password" name="pswd" placeholder="Confirm Password" required="">
+                <input type="text" name="txt" id="reg1" placeholder="Registration Number" onblur="checkReg('reg1')" oninput="removeInvalid('reg1')" required="">
+                <input type="email" name="email" id="email3" placeholder="Email" required="" onblur="checkEmail('email3')" oninput="removeInvalid('email3')">
+                <input type="password" name="pswd" placeholder="Password" id="passWord3" onblur="checkPass('passWord3')"
+                oninput="removeInvalid('passWord3')" required="">
+                <input type="password" name="pswd" id="password33" placeholder="Confirm Password" onblur="confirmPass('passWord3','passWord33')"
+                oninput="removeInvalid('passWord33')" required="">
                 <button>Sign up</button>
             </form>
         </div>
@@ -101,8 +103,9 @@
         <div class="login">
             <form>
                 <label for="chk" aria-hidden="true" id="loginLabel">Login</label>
-                <input type="email" name="email" placeholder="Email" required="">
-                <input type="password" name="pswd" placeholder="Password" required="">
+                <input type="email" name="email" id="email4" placeholder="Email" required="" onblur="checkEmail('email4')" oninput="removeInvalid('email4')">
+                <input type="password" name="pswd" placeholder="Password" id="passWord4" onblur="checkPass('passWord4')"
+                oninput="removeInvalid('passWord4')" required="">
                 <button>Login</button>
             </form>
         </div>
