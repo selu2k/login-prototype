@@ -74,6 +74,10 @@ $("#changePage").on('click', function () {
       opacity: 1,
       easing: 'linear'
     })
+    anime({
+      targets: ".nameLaundreasy",
+      color: '#fff'
+    })
 
     counter += 1
 
@@ -115,6 +119,10 @@ $("#changePage").on('click', function () {
       opacity: 1,
       translateX: [{ value: 0 }],
       easing: 'linear'
+    })
+    anime({
+      targets: ".nameLaundreasy",
+      color: '#1F4287'
     })
 
     counter += 1

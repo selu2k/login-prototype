@@ -161,8 +161,12 @@ body {
     position: absolute;
     padding: 15px 20px;
     font-weight: 500;
-    color: #E48340;
+    color: #1F4287;
     z-index: 5;
+}
+
+.loginContent .nameLaundreasy svg {
+    /* padding: 50px; */
 }
 
 .loginContent .registerPage {
@@ -256,7 +260,7 @@ body {
         background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
         border-radius: 10px;
         box-shadow: 5px 5px 20px #007991;
-        /* change this*/ 
+        /* change this*/
         /* background-color: #278EA5; */
         background-color: white;
     }
@@ -278,7 +282,8 @@ body {
         justify-content: center;
         display: flex;
         margin: 60px;
-        margin-top: 0px; /*  */
+        margin-top: 0px;
+        /*  */
         padding: 10px;
         padding-top: 50px;
         font-weight: bold;
@@ -318,10 +323,13 @@ body {
 
     .nameLaundreasy {
         position: absolute;
-        padding: 15px 20px;
+        padding: 10px 10px;
         font-weight: 500;
-        color: #E48340;
+        color: #1F4287;
         z-index: 5;
+    }
+    .nameLaundreasy svg{
+        /* margin-top: 20px; */
     }
 
     button {
@@ -350,7 +358,7 @@ body {
 
     .login {
         height: 460px;
-        background-color: #1F4287; 
+        background-color: #1F4287;
         /* background: rgb(255, 255, 255); */
         border-radius: 60% / 10%;
         transform: translateY(-80px);
@@ -368,6 +376,10 @@ body {
         background-color: #fff;
     }
 
+    #chk:checked~.nameLaundreasy {
+        color: #fff;
+    }
+
     #chk:checked~.login label {
         transform: scale(1);
         color: #071E3D;
@@ -377,7 +389,8 @@ body {
         transform: scale(.6);
         color: #fff;
     }
-    #chk:checked~.signup  {
+
+    #chk:checked~.signup {
         background-color: #1F4287;
     }
 
