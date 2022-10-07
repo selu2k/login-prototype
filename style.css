@@ -158,6 +158,9 @@ body {
 }
 
 .loginContent .nameLaundreasy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     padding: 15px 20px;
     font-weight: 500;
@@ -322,14 +325,19 @@ body {
     }
 
     .nameLaundreasy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: absolute;
         padding: 10px 10px;
         font-weight: 500;
         color: #1F4287;
         z-index: 5;
     }
-    .nameLaundreasy svg{
+
+    .nameLaundreasy svg {
         /* margin-top: 20px; */
+        /* padding-right: 5px; */
     }
 
     button {
@@ -376,7 +384,7 @@ body {
         background-color: #fff;
     }
 
-    #chk:checked~.nameLaundreasy {
+    #chk:checked~.nameLaundreasy span {
         color: #fff;
     }
 
