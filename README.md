@@ -1,2 +1,2 @@
-# login signup for laundry management
+# login signup prototype
  
